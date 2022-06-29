@@ -1,0 +1,45 @@
+.main-inicio {
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    .texto-inicio {
+        @include parrafos-principales;
+        font-style: italic;
+        font-size: 35px;
+        text-align: center;
+        border-bottom: solid 1px rgb(80, 79, 79);
+        margin: 0% 5%;
+        padding-bottom: 1.5%;
+        color: rgb(138, 135, 135);
+    }
+    .texto-canciones {
+        
+        
+        h3 {
+            @include titulos-principales;
+            font-weight: 300;font-size: 60px;
+            padding: 2% 0% 0% 2%;
+        }
+     }   
+     .subtitulo-canciones {
+        @include parrafos-principales;
+        font-size: 25px;
+     }
+    .caja-canciones {
+        padding: 30px;    
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        iframe {
+            margin: 10px 10px;
+            width: 250px;
+            height: 80px;
+            border-radius: 3px;
+        }   
+    }
+}
+
+
+
+
+

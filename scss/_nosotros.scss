@@ -1,0 +1,21 @@
+.main-nosotros {
+    margin: 3% 0%;
+    h3 {
+        @include titulos-principales;
+        font-size: 70px;
+        font-weight: 300;
+        margin-bottom: 2%;
+        padding-left: 3%;
+    } 
+    .texto-nosotros {
+        text-align: left;
+        font-size: 23px;
+        p {
+            @include parrafos-principales;
+        }
+    }
+}
+
+
+
+

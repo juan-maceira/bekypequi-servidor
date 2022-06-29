@@ -1,0 +1,1380 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;900&family=Roboto:ital,wght@0,300;0,700;0,900;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(224, 224, 224);
+  list-style-type: none;
+  font-family: "Heebo", "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(10, 10, 10);
+}
+
+header {
+  display: grid;
+  grid-template-areas: "encabezado navegador" "enviar enviar";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+header .encabezado {
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column;
+}
+header .encabezado .marca {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .encabezado .marca .logo-bekypequi {
+  margin: 10px 10px 0px 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+header .encabezado .marca h1 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 50px;
+}
+header .encabezado .marca .logo-spotify {
+  padding-top: 20px;
+  margin: 10px;
+  margin-bottom: px;
+  border-radius: 50%;
+}
+header .encabezado .marca .logo-spotify img {
+  width: 30px;
+  height: 30px;
+}
+header .encabezado .subtitulo {
+  margin-left: 4%;
+}
+header .encabezado .subtitulo h2 {
+  font-weight: 300;
+  font-size: 25px;
+  color: rgb(185, 174, 174);
+}
+header .navegador {
+  grid-area: navegador;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+header .navegador ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header .navegador ul li {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+header .navegador ul li a {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  border-radius: 60px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
+  color: rgb(212, 202, 202);
+  font-weight: 300;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-width: 0px;
+}
+header .navegador ul li a:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
+}
+header .navegador ul li a:hover {
+  padding: 7px 12px;
+  background-color: aliceblue;
+  color: black;
+  text-shadow: none;
+}
+header .enviar {
+  grid-area: enviar;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgb(80, 79, 79);
+  padding-bottom: 3vh;
+  margin: 0% 5%;
+}
+header .enviar a {
+  text-align: center;
+  padding: 1.5% 2%;
+  color: rgb(228, 217, 217);
+  font-size: 1.3rem;
+  background-color: orangered;
+  border-radius: 60px;
+  transition: all 0.5s ease;
+}
+header .enviar a:hover {
+  background-color: #673ab7;
+}
+
+footer {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .redes-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .redes-footer a img {
+  width: 24px;
+  margin: 0px 5px;
+}
+footer .navegador-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer .navegador-footer span a {
+  color: rgb(224, 224, 224);
+  font-weight: 100;
+  font-size: 15px;
+  border-left: 1px solid rgb(224, 224, 224);
+  padding: 3px 15px;
+  transition: all 0.5s ease;
+}
+footer .navegador-footer span a:hover {
+  color: rgb(136, 250, 136);
+  border-left: 1px solid rgb(136, 250, 136);
+}
+
+.main-inicio {
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+}
+.main-inicio .texto-inicio {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+  font-style: italic;
+  font-size: 35px;
+  text-align: center;
+  border-bottom: solid 1px rgb(80, 79, 79);
+  margin: 0% 5%;
+  padding-bottom: 1.5%;
+  color: rgb(138, 135, 135);
+}
+.main-inicio .texto-canciones h3 {
+  font-weight: 300;
+  padding-left: 4%;
+  color: rgb(114, 250, 250);
+  font-weight: 300;
+  font-size: 60px;
+  padding: 2% 0% 0% 2%;
+}
+.main-inicio .subtitulo-canciones {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+  font-size: 25px;
+}
+.main-inicio .caja-canciones {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-inicio .caja-canciones iframe {
+  margin: 10px 10px;
+  width: 250px;
+  height: 80px;
+  border-radius: 3px;
+}
+
+.main-nosotros {
+  margin: 3% 0%;
+}
+.main-nosotros h3 {
+  font-weight: 300;
+  padding-left: 4%;
+  color: rgb(114, 250, 250);
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 2%;
+  padding-left: 3%;
+}
+.main-nosotros .texto-nosotros {
+  text-align: left;
+  font-size: 23px;
+}
+.main-nosotros .texto-nosotros p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+}
+
+.main-servicios {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0%;
+}
+.main-servicios .encabezado-promocion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-servicios .encabezado-promocion .titulo-promocion {
+  font-size: 65px;
+  margin-bottom: 2%;
+}
+.main-servicios .encabezado-promocion .titulo-promocion h3 {
+  font-weight: 300;
+  padding-left: 4%;
+  color: rgb(114, 250, 250);
+  font-weight: 300;
+  padding-left: 4%;
+  margin: 2% 2% 3% 0%;
+}
+.main-servicios .encabezado-promocion img {
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  padding-right: 5%;
+}
+.main-servicios .texto-promocion {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: left;
+}
+.main-servicios .texto-promocion p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+}
+.main-servicios .enviar-dos {
+  margin: 0% 2%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(80, 79, 79);
+}
+.main-servicios .enviar-dos a {
+  margin: 4%;
+  padding: 2%;
+  color: white;
+  font-size: 1.3rem;
+  background-color: orangered;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.main-servicios .enviar-dos a:hover {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #673ab7;
+}
+.main-servicios .encabezado-curador {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-servicios .encabezado-curador .titulo-curador {
+  font-size: 55px;
+  margin: 2% 2% 3% 0%;
+}
+.main-servicios .encabezado-curador .titulo-curador h3 {
+  font-weight: 300;
+  padding-left: 4%;
+  color: rgb(114, 250, 250);
+  font-weight: 300;
+  padding-left: 4%;
+}
+.main-servicios .encabezado-curador img {
+  width: 40%;
+  height: auto;
+  border-radius: 2px;
+  padding-right: 5%;
+}
+.main-servicios .texto-curador {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: left;
+  color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.main-servicios .texto-curador p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+}
+
+.main-playlist h3 {
+  font-weight: 300;
+  padding-left: 4%;
+  color: rgb(114, 250, 250);
+  font-size: 60px;
+  font-weight: 300;
+  padding: 1% 3% 0.3% 2%;
+}
+.main-playlist .texto-playlists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.main-playlist .texto-playlists p {
+  font-weight: 300;
+  text-align: left;
+  font-size: 23px;
+  padding-right: 8%;
+  padding-left: 2.5%;
+  color: rgb(207, 197, 197);
+}
+.main-playlist .indice-playlist {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.582)), url(https://i.postimg.cc/2Sm9v9gt/pexels-dids-1644616.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  padding: 5% 5%;
+}
+.main-playlist .indice-playlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-playlist .indice-playlist ul li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+.main-playlist .indice-playlist ul li .boton-verde {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  border-radius: 60px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
+}
+.main-playlist .indice-playlist ul li .boton-verde:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.pages-playlists .titulo-playlists {
+  padding-left: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+.pages-playlists .titulo-playlists h3 {
+  margin-left: 2%;
+  font-weight: 300;
+  font-size: 60px;
+}
+.pages-playlists .titulo-playlists .segui {
+  display: flex;
+}
+.pages-playlists .titulo-playlists .segui p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 10px;
+  color: rgb(134, 247, 134);
+}
+.pages-playlists .titulo-playlists .segui a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5px;
+}
+.pages-playlists .titulo-playlists .segui a img {
+  width: 16px;
+  height: 16px;
+}
+.pages-playlists .caja-playlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3%;
+}
+.pages-playlists .caja-playlist iframe {
+  height: 350px;
+  width: 1500px;
+  border-radius: 5px;
+}
+.pages-playlists .caja-playlist .indice-playlist2 {
+  margin-left: 1%;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5% 2.5%;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li a {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  border-radius: 60px;
+  padding: 5px 15px;
+  border-style: solid;
+  border-width: 1Px;
+  transition: all 0.5s ease;
+  font-size: 25px;
+}
+.pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+  background-color: rgb(23, 139, 23);
+  border-color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.main-contacto h3 {
+  font-size: 40Px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*############ DESKTOP 993 / 1245 ###############*/
+@media (min-width: 993px) and (max-width: 1245px) {
+  header .encabezado .marca .logo-bekypequi {
+    margin: 8px;
+    margin-bottom: 0px;
+    width: 60px;
+    height: 60px;
+  }
+  header .encabezado .marca h1 {
+    font-size: 40px;
+  }
+  header .encabezado .marca .logo-spotify {
+    padding-top: 20px;
+    margin: 8px;
+    margin-bottom: px;
+    border-radius: 50%;
+  }
+  header .encabezado .marca .logo-spotify img {
+    width: 25px;
+    height: 25px;
+  }
+  header .encabezado .subtitulo h2 {
+    font-size: 20px;
+  }
+  header .navegador ul li {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  header .navegador ul li a {
+    padding: 4px 8px;
+    font-size: 18px;
+  }
+  header .navegador ul li a:hover {
+    padding: 6px 10px;
+  }
+  header .enviar a {
+    font-size: 1.1rem;
+  }
+  .main-nosotros h3 {
+    font-size: 50px;
+  }
+  .main-nosotros .texto-nosotros {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    line-height: 35px;
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio .texto-inicio {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 2%;
+    color: rgb(138, 135, 135);
+  }
+  .main-inicio .texto-canciones {
+    font-size: 50px;
+  }
+  .main-inicio .texto-canciones h3 {
+    font-weight: 300;
+  }
+  .main-inicio .subtitulo-canciones {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 20px;
+  }
+  .main-servicios .encabezado-promocion .titulo-promocion {
+    font-size: 55px;
+    margin-bottom: 2%;
+  }
+  .main-servicios .texto-promocion {
+    font-size: 20px;
+    text-align: left;
+  }
+  .main-servicios .encabezado-curador .titulo-curador {
+    font-size: 45px;
+    margin: 2% 0% 1% 0%;
+  }
+  .main-servicios .texto-curador {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .main-playlist h3 {
+    font-size: 50px;
+  }
+  .main-playlist .texto-playlists p {
+    font-size: 20px;
+    padding-right: 8%;
+    padding-left: 2%;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 28px;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .pages-playlists .titulo-playlists {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .pages-playlists .titulo-playlists h3 {
+    margin-left: 2%;
+    font-weight: 300;
+    font-size: 50px;
+  }
+  .pages-playlists .titulo-playlists .segui {
+    display: flex;
+  }
+  .pages-playlists .titulo-playlists .segui p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: rgb(134, 247, 134);
+  }
+  .pages-playlists .titulo-playlists .segui a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .pages-playlists .titulo-playlists .segui a img {
+    width: 16px;
+    height: 16px;
+  }
+  .pages-playlists .caja-playlist iframe {
+    height: 350px;
+    width: 1500px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 23px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  footer .volver-arriba a img {
+    width: 30px;
+  }
+}
+/*############# TABLET 768 / 992  ##################*/
+@media (min-width: 768px) and (max-width: 992px) {
+  header .encabezado .marca .logo-bekypequi {
+    margin: 8px;
+    margin-bottom: 0px;
+    width: 50px;
+    height: 50px;
+  }
+  header .encabezado .marca h1 {
+    font-size: 30px;
+  }
+  header .encabezado .marca .logo-spotify {
+    padding-top: 20px;
+    margin: 7px;
+    margin-bottom: px;
+    border-radius: 50%;
+  }
+  header .encabezado .marca .logo-spotify img {
+    width: 20px;
+    height: 20px;
+  }
+  header .encabezado .subtitulo {
+    margin-left: 7%;
+  }
+  header .encabezado .subtitulo h2 {
+    font-size: 15px;
+  }
+  header .navegador ul li {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  header .navegador ul li a {
+    padding: 3px 6px;
+    font-size: 15px;
+  }
+  header .navegador ul li a:hover {
+    padding: 4px 8px;
+  }
+  header .enviar a {
+    font-size: 0.9rem;
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio .texto-inicio {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2%;
+    color: rgb(138, 135, 135);
+  }
+  .main-inicio .texto-canciones {
+    font-size: 40px;
+  }
+  .main-inicio .texto-canciones h3 {
+    font-weight: 300;
+  }
+  .main-inicio .subtitulo-canciones {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-nosotros h3 {
+    font-size: 40px;
+  }
+  .main-nosotros .texto-nosotros {
+    font-size: 17px;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+  }
+  .main-nosotros .texto-nosotros p {
+    padding-right: 5%;
+  }
+  .main-servicios .encabezado-promocion .titulo-promocion {
+    font-size: 35px;
+    margin-bottom: 2%;
+  }
+  .main-servicios .texto-promocion {
+    font-size: 17px;
+    text-align: left;
+  }
+  .main-servicios .encabezado-curador .titulo-curador {
+    font-size: 35px;
+    margin: 2% 0% 1% 0%;
+  }
+  .main-servicios .texto-curador {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .main-contacto h3 {
+    font-size: 30px;
+  }
+  .main-playlist h3 {
+    font-size: 40px;
+  }
+  .main-playlist .texto-playlists p {
+    font-size: 17px;
+    padding-right: 8%;
+    padding-left: 2%;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 28px;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .pages-playlists .titulo-playlists {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .pages-playlists .titulo-playlists h3 {
+    margin-left: 1.5%;
+    font-weight: 300;
+    font-size: 40px;
+  }
+  .pages-playlists .titulo-playlists .segui {
+    display: flex;
+  }
+  .pages-playlists .titulo-playlists .segui p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: rgb(134, 247, 134);
+  }
+  .pages-playlists .titulo-playlists .segui a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .pages-playlists .titulo-playlists .segui a img {
+    width: 16px;
+    height: 16px;
+  }
+  .pages-playlists .caja-playlist iframe {
+    height: 350px;
+    width: 1500px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  footer .volver-arriba a img {
+    width: 20px;
+  }
+}
+/*####################### TABLET 481 / 767 #######################*/
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 40%);
+    grid-template-areas: "navegador" "encabezado" "enviar";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  header .encabezado {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header .encabezado .marca .logo-bekypequi {
+    margin: 8px 5px 0px 0px;
+    width: 40px;
+    height: 40px;
+  }
+  header .encabezado .marca h1 {
+    font-size: 27px;
+  }
+  header .encabezado .marca .logo-spotify {
+    padding-top: 16px;
+    margin: 4px;
+    border-radius: 50%;
+  }
+  header .encabezado .marca .logo-spotify img {
+    width: 15px;
+    height: 15px;
+  }
+  header .encabezado .subtitulo {
+    margin-left: 0%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  header .encabezado .subtitulo h2 {
+    font-size: 23px;
+  }
+  header .navegador {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+  header .navegador ul {
+    justify-content: center;
+    align-items: center;
+  }
+  header .navegador ul li {
+    margin: 10px 5px;
+  }
+  header .navegador ul li a {
+    padding: 3px 6px;
+    font-size: 20px;
+  }
+  header .navegador ul li a:hover {
+    padding: 4px 8px;
+  }
+  header .enviar {
+    padding: 0px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  header .enviar a {
+    border-radius: 2px;
+    background-color: rgb(248, 104, 52);
+    font-size: 1.9rem;
+    color: rgb(19, 18, 18);
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio .texto-inicio {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 2%;
+    color: rgb(138, 135, 135);
+  }
+  .main-inicio .texto-canciones {
+    font-size: 30px;
+  }
+  .main-inicio .texto-canciones h3 {
+    font-weight: 300;
+  }
+  .main-inicio .subtitulo-canciones {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-inicio .caja-canciones {
+    padding: 30px 20px;
+  }
+  .main-inicio .caja-canciones iframe {
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .main-nosotros {
+    margin: 4% 0%;
+  }
+  .main-nosotros h3 {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 40px;
+  }
+  .main-nosotros .texto-nosotros {
+    font-size: 18px;
+  }
+  .main-nosotros .texto-nosotros p {
+    padding-right: 4%;
+  }
+  .main-servicios .encabezado-promocion .titulo-promocion {
+    font-size: 22px;
+    margin-bottom: 2%;
+  }
+  .main-servicios .encabezado-promocion img {
+    width: 45%;
+  }
+  .main-servicios .texto-promocion {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .main-servicios .enviar-dos {
+    margin: 3% 5%;
+  }
+  .main-servicios .enviar-dos a {
+    margin: 4%;
+    padding: 2%;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .main-servicios .encabezado-curador .titulo-curador {
+    font-size: 22px;
+    margin: 2% 0% 1% 0%;
+  }
+  .main-servicios .encabezado-curador img {
+    width: 45%;
+  }
+  .main-servicios .texto-curador {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .main-playlist h3 {
+    font-size: 40px;
+    padding: 4% 3% 2% 3%;
+  }
+  .main-playlist .texto-playlists p {
+    font-size: 18px;
+    padding-right: 8%;
+    padding-left: 3%;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 25px;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .pages-playlists .titulo-playlists {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .pages-playlists .titulo-playlists a img {
+    width: 20px;
+  }
+  .pages-playlists .titulo-playlists h3 {
+    margin-left: 1.5%;
+    font-weight: 300;
+    font-size: 23px;
+  }
+  .pages-playlists .titulo-playlists .segui {
+    display: flex;
+  }
+  .pages-playlists .titulo-playlists .segui p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: rgb(134, 247, 134);
+  }
+  .pages-playlists .titulo-playlists .segui a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+  }
+  .pages-playlists .titulo-playlists .segui a img {
+    width: 16px;
+    height: 16px;
+  }
+  .pages-playlists .caja-playlist {
+    flex-direction: column;
+    margin: 5% 0%;
+  }
+  .pages-playlists .caja-playlist iframe {
+    height: 250px;
+    width: 80%;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 {
+    margin-top: 20px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .main-contacto h3 {
+    font-size: 25px;
+  }
+  footer {
+    padding-bottom: 5px;
+  }
+  footer .volver-arriba a img {
+    width: 15px;
+  }
+  footer .navegador-footer span a {
+    font-size: 14px;
+    padding: 0px 10px;
+  }
+}
+/*############## SMARTPHONE 480 ####################*/
+@media (max-width: 480px) {
+  header {
+    background-image: linear-gradient(to bottom, rgb(94, 52, 94), rgb(10, 10, 10) 35%);
+    grid-template-areas: "navegador" "encabezado" "enviar";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  header .encabezado {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header .encabezado .marca .logo-bekypequi {
+    margin: 8px 5px 0px 0px;
+    width: 35px;
+    height: 35px;
+  }
+  header .encabezado .marca h1 {
+    font-size: 23px;
+  }
+  header .encabezado .marca .logo-spotify {
+    padding-top: 13px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+  header .encabezado .marca .logo-spotify img {
+    width: 13px;
+    height: 13px;
+  }
+  header .encabezado .subtitulo {
+    margin-left: 0%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  header .encabezado .subtitulo h2 {
+    font-size: 20px;
+  }
+  header .navegador {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 8px 0px;
+  }
+  header .navegador ul {
+    justify-content: center;
+    align-items: center;
+  }
+  header .navegador ul li {
+    margin: 10px 3px;
+  }
+  header .navegador ul li a {
+    padding: 3px 6px;
+    font-size: 16px;
+    border-radius: 0px;
+  }
+  header .navegador ul li a:hover {
+    padding: 4px 8px;
+    background-color: none;
+  }
+  header .enviar {
+    padding: 0px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+  header .enviar a {
+    border-radius: 2px;
+    background-color: rgb(248, 104, 52);
+    font-size: 1.5rem;
+    color: rgb(19, 18, 18);
+  }
+  .main-inicio {
+    margin-top: 2%;
+  }
+  .main-inicio .texto-inicio {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 2%;
+    color: rgb(138, 135, 135);
+  }
+  .main-inicio .subtitulo-canciones {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-inicio .caja-canciones {
+    padding: 30px 20px;
+  }
+  .main-inicio .caja-canciones iframe {
+    margin: 10px 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .main-inicio .texto-canciones {
+    font-size: 25px;
+    margin-left: 1%;
+  }
+  .main-nosotros {
+    margin: 4% 0%;
+  }
+  .main-nosotros h3 {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-size: 30px;
+  }
+  .main-nosotros .texto-nosotros p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-servicios .encabezado-promocion .titulo-promocion {
+    font-size: 17px;
+    margin-bottom: 2%;
+  }
+  .main-servicios .encabezado-promocion img {
+    width: 45%;
+  }
+  .main-servicios .texto-promocion {
+    margin-top: 15px;
+  }
+  .main-servicios .texto-promocion p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-servicios .enviar-dos {
+    margin: 3% 5%;
+  }
+  .main-servicios .enviar-dos a {
+    margin: 4%;
+    padding: 2%;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .main-servicios .encabezado-curador .titulo-curador {
+    font-size: 17px;
+    margin: 2% 0% 1% 0%;
+  }
+  .main-servicios .encabezado-curador img {
+    width: 45%;
+  }
+  .main-servicios .texto-curador {
+    margin-top: 15px;
+  }
+  .main-servicios .texto-curador p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+  }
+  .main-playlist h3 {
+    font-size: 30px;
+    padding: 4% 3% 2% 3%;
+  }
+  .main-playlist .texto-playlists p {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;
+    color: rgb(207, 197, 197);
+    font-size: 18px;
+    padding-left: 3%;
+  }
+  .main-playlist .indice-playlist {
+    padding: 7% 1%;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+  }
+  .main-playlist .indice-playlist ul li .boton-verde:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .pages-playlists .titulo-playlists {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .pages-playlists .titulo-playlists a img {
+    width: 15px;
+  }
+  .pages-playlists .titulo-playlists h3 {
+    margin-left: 1.5%;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .pages-playlists .titulo-playlists .segui {
+    display: flex;
+  }
+  .pages-playlists .titulo-playlists .segui p {
+    font-size: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: rgb(134, 247, 134);
+  }
+  .pages-playlists .titulo-playlists .segui a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3px;
+  }
+  .pages-playlists .titulo-playlists .segui a img {
+    width: 10px;
+    height: 10px;
+  }
+  .pages-playlists .caja-playlist {
+    flex-direction: column;
+    margin: 3% 0%;
+  }
+  .pages-playlists .caja-playlist iframe {
+    height: 250px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 {
+    margin-left: 0%;
+    margin-top: 20px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    font-size: 18px;
+  }
+  .pages-playlists .caja-playlist .indice-playlist2 ul li a:hover {
+    background-color: rgb(23, 139, 23);
+    border-color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+  .main-contacto h3 {
+    font-size: 25Px;
+  }
+  footer {
+    padding-bottom: 5px;
+  }
+  footer .volver-arriba a img {
+    width: 15px;
+  }
+  footer .navegador-footer {
+    margin-top: 0px;
+  }
+  footer .navegador-footer span a {
+    font-size: 13px;
+    padding: 0px 7px;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */

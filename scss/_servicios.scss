@@ -1,0 +1,99 @@
+.main-servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0%;
+    .encabezado-promocion {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        .titulo-promocion {
+            font-size:65px;
+            margin-bottom: 2%;
+            h3 {
+                @include titulos-principales;
+                font-weight: 300;
+                padding-left: 4%;
+                margin: 2% 2% 3% 0%;
+            }       
+        }
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 5px;
+            padding-right: 5%;
+        }
+    }
+    .texto-promocion {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;       
+        font-weight: 400;
+        font-size: 23px;
+        text-align: left;      
+        p {
+            @include parrafos-principales;
+        }    
+    }
+    .enviar-dos {
+        margin: 0% 2%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 1px solid rgb(80, 79, 79);
+        a {
+            margin: 4%;
+            padding: 2%;
+            color: white;
+            font-size: 1.3rem;
+            background-color: orangered;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            &:hover {
+                font-size: 1.3rem;
+                color: white;
+                background-color: #673ab7; 
+            } 
+        }
+    }
+    .encabezado-curador {
+        margin-top: 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .titulo-curador {
+            font-size: 55px;
+            margin: 2% 2% 3% 0%;
+            h3 {
+                @include titulos-principales;
+                font-weight: 300;
+                padding-left: 4%;
+            }      
+        }
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 2px;
+            padding-right: 5%;
+        }
+    }
+    .texto-curador {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: left;
+        color: rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        p {
+            @include parrafos-principales;
+        }
+    }       
+}
+
+
+
+
+

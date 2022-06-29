@@ -1,0 +1,113 @@
+
+header { 
+    display: grid;
+    grid-template-areas: 
+    "encabezado navegador"
+    "enviar enviar";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    .encabezado {
+        grid-area: encabezado;
+        display: flex;
+        flex-direction: column;
+        .marca {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .logo-bekypequi {
+                margin:10px 10px 0px 10px;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            h1 {
+                margin-top: 10px;
+                font-weight: 300;
+                font-size:50px;     
+            }
+            .logo-spotify {
+                padding-top: 20px;
+                margin:10px;
+                margin-bottom: px;
+                border-radius: 50%;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }    
+        .subtitulo {
+            margin-left: 4%;
+            h2 {
+                font-weight: 300;
+                font-size: 25px;
+                color: rgb(185, 174, 174);      
+            }
+        }       
+    }
+    .navegador {
+        grid-area: navegador;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin-top: 20px;
+                margin-right: 20px;          
+                a {
+                    @include boton-redondeado;
+                    color: rgb(212, 202, 202);
+                    font-weight: 300;
+                    padding: 5px 10px;
+                    font-size: 20px;
+                    border-width: 0px;
+                    &:hover {
+                        padding: 7px 12px;
+                        background-color: aliceblue;
+                        color: black;
+                        text-shadow: none;
+                    }
+                }
+            }
+        }  
+    }
+    .enviar {
+        
+        grid-area: enviar;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly;
+        align-items: center;
+        border-bottom: 1px solid rgb(80, 79, 79);
+        padding-bottom: 3vh;
+        margin: 0% 5%;
+        a {
+            text-align: center;
+            padding: 1.5% 2%;
+            color: rgb(228, 217, 217);
+            font-size: 1.3rem;
+            background-color: orangered;
+            border-radius: 60px;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color: #673ab7;   
+            }  
+        }
+    }
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+@mixin boton-redondeado {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 60px;
+    padding: 5px 15px; 
+    border-style: solid;
+    border-width: 1Px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: rgb(23, 139, 23);
+        border-color: white; 
+        text-shadow: 3px 3px 3px black;   
+    }             
+}
+
+@mixin parrafos-principales {
+    font-weight: 300;
+    text-align: left;
+    font-size: 23px;
+    padding-right: 8%;
+    padding-left: 2.5%;        
+    color: rgb(207, 197, 197);   
+}
+
+@mixin titulos-principales {
+    font-weight: 300;
+    padding-left: 4%;
+    color: rgb(114, 250, 250);
+}
